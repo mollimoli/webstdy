@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS-CSS기초</title>
+  <style>
+    .js{font-weight: bold;
+    color: rgb(176, 102, 102);}
+    #first{color: rgb(4, 2, 2);}
+    span{color: rgb(103, 106, 204);}
+  </style>
+</head>
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+  <h2 style="background-color: rgb(176, 102, 102); color: rgb(4, 2, 2);">JavaScript</h2>
+  <input type="button" value="night" onclick="
+  document.querySelector('body').style.backgroundColor='rgb(1, 1, 1)'
+  ; document. querySelector('body').style.color='rgb(255, 255, 255)';">
+  <input type="button" value="day" onclick="
+  document.querySelector('body').style.backgroundColor='rgb(255, 255, 255)'
+  ; document. querySelector('body').style.color='rgb(1, 1, 1)';">
+   <input type="button" value="black" onclick="
+   if(document.querySelector('body').dataset.mode ==='day'){
+    document.querySelector('body').style.backgroundColor='rgb(1, 1, 1)'; 
+    document. querySelector('body').style.color='rgb(255, 255, 255)';
+    document.querySelector('body').dataset.mode ='night';
+    this.value = 'day';}
+    else{
+    document.querySelector('body').style.backgroundColor='rgb(255, 255, 255)'; 
+    document. querySelector('body').style.color='rgb(1, 1, 1)';
+    document.querySelector('body').dataset.mode ='day';
+    this.value = 'night';}
+  ">
+  <input type="button" value="hi" onclick="alert('hi')">
+  <input type="text" onchange="alert('changed')">
+  <input type="text" onkeydown="alert('key down')">
+  <script>
+    document.write(1+1);
+  </script>
+  <p>
+    <span id="first" class="js">JavaScript </span> (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside <span>HTML</span> and <span>CSS</span>, <span class="js">JavaScript </span> is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in <span class="js">JavaScript </span> engine. Each of the many <span class="js">JavaScript </span> engines represent a different implementation of <span class="js">JavaScript </span>, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.
+  </body>
+  </html>
