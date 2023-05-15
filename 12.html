@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <title>반복문 예제</title>
+  <meta charset="utf-8">
+  <style>
+    body{
+      background: #c1d3f6;
+      margin:0;
+    }
+    a {
+      color:rgb(91, 81, 148);
+      text-decoration: none;
+    }
+    h1 {
+      font-size:45px;
+      text-align: center;
+      border-bottom:1px solid rgb(91, 92, 97);
+      margin:0;
+      padding:20px;
+    }
+    ol {
+      font-size:15px;
+      border-bottom:1px solid rgb(91, 92, 97);
+      margin:0;
+      padding:20px;
+    }
+    h5, p {
+      color:rgb(91, 81, 148);
+      font-size:13px;
+      margin:0;
+      padding:20px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    function button1() 
+    {
+      var sum = 0;
+      var i = 1;
+      var calculation = "";
+      while (i <= 100) {
+    
+        sum = sum + i
+        i= i+1
+    
+        calculation = calculation +sum +  "<br>"
+        document.getElementById("sum").innerHTML = sum;
+        document.getElementById("calculation").innerHTML = calculation;
+    
+      }  
+    }
+    
+    function button2() 
+    {
+    var sum = 0;
+    var i = 0;
+    var calculation = "";
+     while (i <= 100) {
+
+     sum = sum + i
+     i= i+2
+
+    calculation = calculation +sum +  "<br>"
+    document.getElementById("sum").innerHTML = sum;
+    document.getElementById("calculation").innerHTML = calculation;
+
+   }  
+    }
+  
+    
+    function button3() 
+    {
+      var sum = 0;
+      var i = 100;
+      var calculation = "";
+      while (i >= 1) {
+    
+        calculation = calculation + i +  "<br>"
+        document.getElementById("sum").innerHTML = sum;
+        document.getElementById("calculation").innerHTML = calculation;
+        i= i-1
+      }  
+    }
+    </script>
+ <h1><a href="11.html">숙제</a></h1>
+ <ol>
+   <li><a href="12.html" title="1">반복문 숙련도를 높이기 위한 예제들1 -단순반복</a></li><br>
+   <li><a href="13.html" title="2">반복문 숙련도를 높이기 위한 예제들2 - 단순반복 feat. 조건문</a></li>
+ </ol>
+  <h5>1. 버튼을 누르면 1부터 100 까지의 숫자의 합을 출력하되, 계산되는 과정도 출력</h5>
+    <button onclick="button1()">1~100 계산</button>
+
+  <h5>2. 버튼을 누르면 1부터 100 사이의 짝수의 합을 출력</h5>
+    <button onclick="button2()">1~100 짝수 계산</button>
+
+  <h5>3. 버튼을 누르면 100 에서 거꾸로 1 까지 출력</h5>
+    <button onclick="button3()">100~1 출력</button>
+
+    <p>합계: <span id="sum"></span></p>
+    <p>계산 과정:<br>
+    <span id="calculation"></span></p>
+  </body>
+</html>

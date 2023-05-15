@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+  <title>반복문 예제</title>
+  <meta charset="utf-8">
+  <style>
+    body{
+      background: #c1d3f6;
+      margin:0;
+    }
+    a {
+      color:rgb(91, 81, 148);
+      text-decoration: none;
+    }
+    h1 {
+      font-size:45px;
+      text-align: center;
+      border-bottom:1px solid rgb(91, 92, 97);
+      margin:0;
+      padding:20px;
+    }
+    ol {
+      font-size:15px;
+      border-bottom:1px solid rgb(91, 92, 97);
+      margin:0;
+      padding:20px;
+    }
+    h5, p {
+      color:rgb(91, 81, 148);
+      font-size:13px;
+      margin:0;
+      padding:20px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    function button1() 
+    {
+    var sum = 0;
+    var i = 1;
+     var calculation = "";
+    while (i <= 100) {
+
+    if(i%2==0){
+
+      calculation = "<font color =pink>" + calculation + i +  "</font><br>"
+    }
+    else{
+      calculation = "<font color =black>" + calculation + i +  "</font><br>"
+    }
+    document.getElementById("calculation").innerHTML = calculation;
+    i= i+1
+    }  
+    }
+    
+    function button2() 
+    {
+    var sum = 0;
+    var i = 1;
+    var calculation = "";
+     while (i <= 100) {
+
+     if(i%3==0){
+
+      calculation = "<font color =pink>" + calculation + "짝</font><br>"
+     }
+     else{
+      calculation = "<font color =black>" + calculation + i +  "</font><br>"
+     }
+     document.getElementById("calculation").innerHTML = calculation;
+     i= i+1
+     }  
+     }
+    </script>
+ <h1><a href="11.html">숙제</a></h1>
+ <ol>
+   <li><a href="12.html" title="1">반복문 숙련도를 높이기 위한 예제들1 -단순반복</a></li><br>
+   <li><a href="13.html" title="2">반복문 숙련도를 높이기 위한 예제들2 - 단순반복 feat. 조건문</a></li>
+ </ol>
+  <h5>1. 버튼을 누르면 1에서 100까지 출력을 하되,  홀수는 폰트색깔을 검정색, 짝수는 분홍색으로 표현 </h5>
+  <button onclick="button1()">1~100 홀검 짝핑</button>
+  <h5>2. 버튼을 누르면 1에서 100까지 출력을 하되,  3의 배수는 한글로 짝으로 출력</h5>
+  <button onclick="button2()">3배수 박수</button>
+  <p>출력물:<br>
+  <span id="calculation"></span></p>
+  </body>
+</html>
