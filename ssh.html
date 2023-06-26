@@ -1,0 +1,190 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>즐거운 농촌! 행복한 농촌!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/2c827c8cca.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <style>
+  nav {
+  padding: 2rem;
+  position:fixed;}
+  .first-img {
+  width: 100vw;}
+  .btn-outline-success {color: rgb(68, 73, 210); border-color: rgb(68, 73, 210);}
+  .btn-outline-success:hover {background-color: rgb(68, 73, 210); color: rgb(255, 255, 255); border-color: rgb(68, 73, 210);}
+  .card:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;}
+  footer {
+  background: #19110b;
+  font-size: 14px;}
+ .first-line {
+  color: white;
+  border-bottom: 1px solid rgb(68, 73, 210);}
+ .second-line a {
+  color: white;
+  text-decoration: none;}
+ .flag {
+  color: white;}
+ .mobile-footer {
+  border-top: 1px solid rgb(68, 73, 210);
+  color: white;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 300;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  align-items: center;
+  display: none; }
+  @media screen and (max-width: 48rem) {
+  .second-line {
+    padding: 0 2rem;
+  }
+
+  .flag {
+    display: none;
+  }
+
+  .first-line {
+    text-align: center;
+  }
+
+  .mobile-footer {
+    display: block;
+  }}
+ .col {
+  padding-bottom: 1rem;}
+ .flag-img {
+  margin: 0 0.5rem;}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><h2>해피 농활 프로젝트</h2></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">3</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              etc.
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">4</a></li>
+              <li><a class="dropdown-item" href="#">5</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">6</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">♥</button>
+        </form>
+      </div>
+    </div>
+   </nav>
+
+   <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="https://cdn.discordapp.com/attachments/995868601657610340/1107637155339194408/2023-05-15_19.52.24.png" height="765px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <strong><h3>농촌에서의 생황</h3></strong>
+          <p>부가설명</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="https://cdn.discordapp.com/attachments/995868601657610340/1106766538628923502/2023-05-13_11.14.06.png" height="765px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <strong><h3>농촌에서의 생황</h3></strong>
+          <p>부가설명</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.discordapp.com/attachments/995868601657610340/1000090498222014473/unknown.png" height="765px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <strong><h3>농촌에서의 생황</h3></strong>
+          <p>부가설명</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="campagine-section text-center mt-5 mb-5">
+    <h2>
+      성공적인 농촌
+    </h2>
+    <p>
+       상상회와 함께
+    </p>
+    <button type="button" class="btn btn-dark">참가 문의</button>
+</div>
+
+
+
+
+  <footer>
+    <div class="container">
+        <div class="first-line pb-5 pt-5">
+          상상회에서 만들었어용
+        </div>
+        <div class="row pb-5 pt-5 second-line ">
+            <div class="flag col">
+                <img src="data:image/png;base64,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" width=16 height=12 />
+                대한민국
+            </div>
+            <div class="col"><a href="#">
+                Email Sign-Up</a></div>
+            <div class="col"> <a href="#">Contact Us</a></div>
+            <div class="col"> <a href="#">Apps</a></div>
+            <div class="col"> <a href="#">Follow Us</a></div>
+            <div class="col"> <a href="#">California Transparency</a></div>
+            <div class="col"><a href="#"> Legal Notice</a></div>
+            <div class="col"> <a href="#">Careers</a></div>
+            <div class="col"> <a href="#">Sitemap</a></div>     
+        </div>         
+        <div class=" mobile-footer">
+            Shipt to : <img src="data:image/png;base64,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"
+                width=16 height=12 class="flag-img" /> Unitied States
+        </div>
+    </div>
+</footer>
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
