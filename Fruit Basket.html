@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Fruit Basket</title>
+
+    <link rel="icon" href="https://www.svgrepo.com/show/395858/basket.svg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>  
+    nav {
+   padding: 2rem;
+   position:fixed;}
+   .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: #ffc561;
+    background-clip: padding-box;
+    border: 1px solid #ffc561;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+    .first-img {
+    width: 100vw;}
+   .btn-outline-success {
+   color: #ffc561;
+   border-color: #ffc561;}
+   .btn-outline-success:hover {
+   background-color: #ffc561;
+   color: white;
+   border-color: #ffc561;}
+   .btn-dark {
+    color: #ff5500;
+    background-color: #ffc561;
+    border-color: #ffc561;}
+    .btn-dark:hover {
+     color: #ffc561;
+     background-color: #ff5500;
+     border-color: #ff5500
+     }
+
+
+   .card:hover {
+   transform: scale(1.05);
+   transition: 0.5s ease-in-out;}
+   footer { background: #ffc561;
+   font-size: 14px;}
+   .first-line {
+   color: #ff5500;
+    border-bottom: 1px solid #ff5500;}
+   .second-line a {
+   color: #ff5500;
+    text-decoration: none;}
+   .flag {
+   color: #ff5500;}
+   .mobile-footer {
+   border-top: 1px solid #ff5500;
+   color: #ff5500;
+   text-align: center;
+   font-size: 1.125rem;
+   font-weight: 300;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   align-items: center;
+   display: none;}
+  @media screen and (max-width: 48rem) {
+   .second-line {
+    padding: 0 2rem;}
+
+   .flag {
+    display: none;}
+
+   .first-line {
+    text-align: center;}
+
+   .mobile-footer {
+    display: block; }}
+   .col {
+   padding-bottom: 1rem;}
+   .flag-img {
+   margin: 0 0.5rem;}
+   .h2_1 {
+    display: block;
+    font-size: 1.5em;
+    color: #fdb22f;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;}
+  </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <div class="h2_1"><img src="https://www.svgrepo.com/show/395858/basket.svg"width="30px"style="
+                padding-bottom: 10px;"> Fruit Basket</div></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">NEW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ORANGE</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            STRAWBERRY
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" tabindex="-1">BLUEBERRY</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1590004987778-bece5c9adab6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+                    alt="..." class="first-img">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1590004953392-5aba2e72269a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
+                    class="first-img" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="campagine-section text-center mt-5 mb-5">
+        <div class="h2_1">
+          취향대로 골라 먹는 재미가 있는
+        </div>
+        <p>
+          Fruit Basket
+        </p>
+        <button type="button" class="btn btn-dark">구경하기</button>
+    </div>
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1597714026720-8f74c62310ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                       class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h2 class="card-text">ORANGE</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1594282241894-4da286138f44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-text text-center">STRAWBERRY</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1597474561103-0773c378a1fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8JUVCJUI4JTk0JUVCJUEzJUE4JUVCJUIyJUEwJUVCJUE2JUFDfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-text text-center">BLUEBERRY</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <footer>
+        <div class="container">
+            <div class="first-line pb-5 pt-5">
+              Fruit Basket
+            </div>
+            <div class="row pb-5 pt-5 second-line ">
+                <div class="col"><a href="#">
+                    Email Sign-Up</a></div>
+                <div class="col"> <a href="#">Contact Us</a></div>
+                <div class="col"> <a href="#">Apps</a></div>
+                <div class="col"> <a href="#">Follow Us</a></div>
+                <div class="col"> <a href="#">California Transparency</a></div>
+                <div class="col"><a href="#"> Legal Notice</a></div>
+                <div class="col"> <a href="#">Careers</a></div>
+                <div class="col"> <a href="#">Sitemap</a></div>     
+            </div>         
+            <div class=" mobile-footer">
+               <img src="https://www.svgrepo.com/show/395858/basket.svg"
+                    width=25px class="flag-img" /> 신선한 과일
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
